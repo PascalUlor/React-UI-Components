@@ -9,7 +9,7 @@
 }
 
 .card__content{
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 5px;
     margin-left: 5rem;
     width: '89%'
@@ -17,6 +17,10 @@
 
 .card__text {
     padding: 1rem;
+}
+
+.card__text h4 {
+    margin: 0;
 }
 
 .last__text{
