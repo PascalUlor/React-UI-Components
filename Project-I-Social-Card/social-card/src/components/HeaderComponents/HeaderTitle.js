@@ -1,11 +1,12 @@
 import React from 'react';
+import moment from 'moment';
 import './Header.css';
 
 function HeaderTitle() {
     return (
     <h4>
     Lambda School &nbsp;
-    <span>@LambdaSchool . 26 jan</span>
+    <span>@LambdaSchool . {moment().format('D MMM').toLocaleLowerCase()}</span>
     </h4>
     );
 }
