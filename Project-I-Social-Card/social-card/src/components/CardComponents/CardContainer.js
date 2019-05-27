@@ -2,6 +2,7 @@ import React from 'react';
 import './Card.css';
 import CardBanner from './CardBanner';
 import CardContent from './CardContent';
+import Footer from '../FooterComponents/Footer';
 
 const nextPage = () => window.location.href = 'https://reactjs.org';
 
@@ -11,6 +12,7 @@ function CardContainer () {
    <div onClick={nextPage} className='card'>
     <CardBanner url={imageUrl}/>
     <CardContent />
+    <Footer />
     </div>);
 }
 

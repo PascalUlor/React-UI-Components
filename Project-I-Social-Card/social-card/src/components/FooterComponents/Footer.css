@@ -1,0 +1,14 @@
+footer {
+    width: 100%;
+    border: 1px solid lightgray;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15rem;
+    height: 2rem;
+    padding: 1rem;
+}
