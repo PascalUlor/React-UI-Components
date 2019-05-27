@@ -1,1 +1,39 @@
 /* All styles for your header Components live here */
+.header__container {
+    display: flex;
+    height: 8rem;
+    width: 50%;
+    /* background-color: blue; */
+    border: 1px solid black;
+}
+.header__text {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    padding: 0.2rem;
+}
+
+.header__text h4 {
+    margin: 0.5rem 0 0 0;
+}
+
+.header__container span {
+    color: gray;
+}
+
+.header__container img {
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid red;
+    padding: 1rem;
+    /* background-color: red; */
+}
+
+.image__layer {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: black;
+    height: 5rem;
+    border-radius: 10rem;
+}
