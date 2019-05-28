@@ -1,11 +1,16 @@
 import React from 'react';
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+import ActionButton from './components/ButtonComponents/ActionButton';
 import './App.css';
 
 const App = () => {
   return (
     <div className='main__container'>
       <CalculatorDisplay />
+      <div className='action__container'>
+      <ActionButton text='clear'/>
+      <ActionButton text='0'/>
+      </div>
 
       {/* <h3>Welcome to React Calculator</h3>
       <p>
