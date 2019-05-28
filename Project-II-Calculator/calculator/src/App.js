@@ -11,18 +11,24 @@ const App = () => {
       <div className='button__container'>
         <div className='action__container'>
           <ActionButton text='clear' />
-          <NumberButton digit='7' />
-          <NumberButton digit='8' />
-          <NumberButton digit='9' />
-          <NumberButton digit='4' />
-          <NumberButton digit='5' />
-          <NumberButton digit='6' />
-          <NumberButton digit='1' />
-          <NumberButton digit='2' />
-          <NumberButton digit='3' />
+          <NumberButton param={7} />
+          <NumberButton param={8} />
+          <NumberButton param={9} />
+          <NumberButton param={4} />
+          <NumberButton param={5} />
+          <NumberButton param={6} />
+          <NumberButton param={1} />
+          <NumberButton param={2} />
+          <NumberButton param={3} />
           <ActionButton text='0' />
         </div>
-        <div className='symbols'></div>
+        <div className='symbols'>
+        <NumberButton param='÷' />
+        <NumberButton param='X' />
+        <NumberButton param='-' />
+        <NumberButton param='+' />
+        <NumberButton param='=' />
+        </div>
       </div>
 
       {/* <h3>Welcome to React Calculator</h3>
