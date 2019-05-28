@@ -1,0 +1,12 @@
+footer {
+    width: 50%;
+    margin: 0.2rem;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    /* margin-right: 15rem; */
+    height: 2rem;
+    padding: 1rem 12rem 0 2rem;
+}

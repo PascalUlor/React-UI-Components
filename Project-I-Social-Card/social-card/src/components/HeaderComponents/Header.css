@@ -1,1 +1,32 @@
 /* All styles for your header Components live here */
+.header__container {
+    display: flex;
+    height: 8rem;
+    width: 50%;
+}
+.header__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+}
+
+.header__text h4 {
+    margin: 0.5rem 0 0 0;
+}
+
+.header__container span {
+    color: gray;
+}
+
+.header__container img {
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+}
+
+.image__layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
