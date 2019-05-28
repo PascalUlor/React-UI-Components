@@ -1,14 +1,12 @@
 .button__container {
     display: flex;
     height: 51rem;
+    border: 2px solid darkgrey;
 }
 .action__container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* height: 50rem; */
-    /* margin-right: 8.5rem; */
-    border: 1px solid yellow;
 }
 .action__button {
     display: flex;
@@ -18,7 +16,6 @@
     height: 8rem;
     font-size: 5rem;
     color: #000;
-    border: 1px solid red;
 }
 
 .action__button p {
@@ -29,16 +26,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
     width: 32%;
     margin-right: 0;
     height: 8rem;
     font-size: 4rem;
-    padding: 0 .1rem 0 .13rem;
+    font-weight: bold;
+    padding: 0 .1rem 0 0;
+    border: 2px solid darkgrey;
 }
 
 .symbols {
-    border: 1px solid purple;
     width: 32%;
 }
 
@@ -50,6 +47,7 @@
     width: 100%;
     height: 8rem;
     font-size: 4rem;
+    font-weight: bold;
     background-color: darkred;
-    border: 1px solid cyan;
+    border: 1.5px solid darkgrey;
 }

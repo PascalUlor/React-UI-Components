@@ -20,12 +20,12 @@ const App = () => {
           <NumberButton param={1} />
           <NumberButton param={2} />
           <NumberButton param={3} />
-          <ActionButton text='0' />
+          <ActionButton text='0' bold />
         </div>
         <div className='symbols'>
         <NumberButton param='÷' />
         <NumberButton param='X' />
-        <NumberButton param='-' />
+        <NumberButton param='—' />
         <NumberButton param='+' />
         <NumberButton param='=' />
         </div>
