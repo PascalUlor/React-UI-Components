@@ -5,34 +5,60 @@ import NumberButton from './components/ButtonComponents/NumberButton';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.initialState = { display: '' }
+    this.state = this.initialState;
+  }
 
+  displayHandler = value => {
+if(value === 'X') {
+  value = '*';
+}
+    this.setState({
+      display: this.state.display + value
+    })
+  }
+
+  clearDisplay = () =>{
+    this.setState({
+      display: ''
+    })
+  }
+
+  evaluate = () =>{
+    console.log(this.state.display.toString());
+    this.setState({
+      display: eval(this.state.display.toString())
+    })
+  }
   render() {
     return (
       <div className='main__container'>
-        <CalculatorDisplay />
+        <CalculatorDisplay text={this.state.display} />
         <div className='button__container'>
           <div className='action__container'>
-            <ActionButton text='clear' />
-            <NumberButton param={7} />
-            <NumberButton param={8} />
-            <NumberButton param={9} />
-            <NumberButton param={4} />
-            <NumberButton param={5} />
-            <NumberButton param={6} />
-            <NumberButton param={1} />
-            <NumberButton param={2} />
-            <NumberButton param={3} />
-            <ActionButton text='0' bold />
+            <ActionButton clearHandler={this.clearDisplay} text='clear' />
+            <NumberButton clickHandler={this.displayHandler} param={7} />
+            <NumberButton clickHandler={this.displayHandler} param={8} />
+            <NumberButton clickHandler={this.displayHandler} param={9} />
+            <NumberButton clickHandler={this.displayHandler} param={4} />
+            <NumberButton clickHandler={this.displayHandler} param={5} />
+            <NumberButton clickHandler={this.displayHandler} param={6} />
+            <NumberButton clickHandler={this.displayHandler} param={1} />
+            <NumberButton clickHandler={this.displayHandler} param={2} />
+            <NumberButton clickHandler={this.displayHandler} param={3} />
+            <ActionButton clickHandler={this.displayHandler} text={0} bold />
           </div>
           <div className='symbols'>
-          <NumberButton param='÷' />
-          <NumberButton param='X' />
-          <NumberButton param='—' />
-          <NumberButton param='+' />
-          <NumberButton param='=' />
+            <NumberButton clickHandler={this.displayHandler} param='÷' />
+            <NumberButton clickHandler={this.displayHandler} param='X' />
+            <NumberButton clickHandler={this.displayHandler} param='—' />
+            <NumberButton clickHandler={this.displayHandler} param='+' />
+            <NumberButton evalHandler={this.evaluate} param='=' />
           </div>
         </div>
-  
+
         {/* <h3>Welcome to React Calculator</h3>
         <p>
           We have given you a starter project. You'll want to build out your
@@ -48,7 +74,7 @@ class App extends Component {
       </div>
     )
   }
-  
+
 };
 
 export default App;
