@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 50rem;
+    height: 51rem;
     width: 40%;
     margin: 0 auto;
-    border: 1px solid blue;
 }
