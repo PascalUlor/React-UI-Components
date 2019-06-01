@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import math from 'mathjs';
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
 import ActionButton from './components/ButtonComponents/ActionButton';
 import NumberButton from './components/ButtonComponents/NumberButton';
@@ -15,6 +16,14 @@ class App extends Component {
 if(value === 'X') {
   value = '*';
 }
+
+if(value === '—') {
+  value = '-';
+}
+if(value === '÷') {
+  value = '/';
+}
+
     this.setState({
       display: this.state.display + value
     })
@@ -29,7 +38,7 @@ if(value === 'X') {
   evaluate = () =>{
     console.log(this.state.display.toString());
     this.setState({
-      display: eval(this.state.display.toString())
+      display: math.eval(this.state.display.toString())
     })
   }
   render() {
